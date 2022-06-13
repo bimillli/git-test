@@ -35,14 +35,10 @@ function goHide5() {
 }
 
 $(document).ready( function() {
-	$('a.s_point').smoothScroll(); // smoothScroll을 사용하기 위해서는 아래에 있는 코드를 추가해야 함
-
-	// 스크롤하여 내려와야 top버튼이 보이도록 함.
-	if ( $(document).scrollTop() < 50) $('.to_top').addClass('hide'); // 스크롤이 50px 이하일 때 클래스 hide를 추가하기
-	else $('.to_top').removeClass('hide'); // 스크롤이 50px 이상일 때 클래스 hide를 제거하기
-	$(window).scroll( function() { // 스크롤이 발생할 때마다 아래에 있는 코드를 실행하기
-	  if ( $(document).scrollTop() < 50) $('.to_top').addClass('hide'); // 스크롤이 50px 이하일 때 클래스 hide를 추가하기
-	  else $('.to_top').removeClass('hide'); // 스크롤이 50px 이상일 때 클래스 hide를 제거하기
+	//상단 메뉴 마우스오버, 탭 클릭 코드
+	$(".openAll1").mouseover(function(){
+		//서브메뉴 나타나기
+		$(".gnb_depth2_1").fadeIn("fast");
 	});
 
 	//gnb_depth2_1	
