@@ -38,7 +38,12 @@ $(document).ready( function() {
 	//상단 메뉴 마우스오버, 탭 클릭 코드
 	$(".openAll1").mouseover(function(){
 		//서브메뉴 나타나기
-		$(".gnb_depth2_1").fadeIn("fast");
+		if(parseInt($("header").css("width")) > 800)
+			$(".gnb_depth2_2").fadeIn("fast");
+	}).mouseout(function(){
+		$(".gnb_depth2_2").fadeOut("fast");
+	}).mouseout(function(){
+		$(".gnb_depth2_1").fadeOut("fast");
 	});
 
 	//gnb_depth2_1	
