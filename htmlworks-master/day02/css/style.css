@@ -1,0 +1,12 @@
+/* 외부 스타일 */
+body{
+    background-color: #FFD9EC;
+}
+h2{
+  color: #FF5E00;
+}
+p{
+    font-size: 18px;
+    font-family: "바탕체";
+    color: #0000ff;
+}

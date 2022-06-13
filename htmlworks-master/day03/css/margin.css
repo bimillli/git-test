@@ -1,0 +1,20 @@
+div{
+    width: 200px;
+    height: 100px;
+    border: 3px solid #333;
+}
+
+#box1{
+    margin: 30px;
+    /* top > right > bottom > left */
+}
+
+#box2{
+    margin: 50px 50px 30px 30px;
+}
+
+#box3{
+    margin: 30px 50px 30px 50px;
+}
+
+/* 여백은 중첩되지 않고 top과 bottom중에 큰쪽으로 적용됨 */

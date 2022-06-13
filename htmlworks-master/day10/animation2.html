@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 속성</title>
+    <style>
+        .box{
+            margin-top: 100px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 60px;
+            line-height: 20px;
+            /* animation-name: moving;
+            /*normal은 디폴트 alternate는 리버스된 상태로 이펙팅*/
+            /* animation-direction: alternate; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 5; */
+            /*forwards는 횟수가 있을때 그 횟수에 맞춰서 이펙팅을 정지한다*/
+            /* animation-fill-mode: forwards; */
+            animation: moving 2s normal infinite;
+        }
+
+            /*중간에 50%로 속성조절이 가능하다*/
+        @keyframes moving {
+            from{
+                width: 200px;
+                background: yellow;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            50%{transform: scale(0.7) rotate(15deg);
+                background: red;
+            }
+
+            to{
+                width: 400px;
+                background: orange;
+                transform: scale(1); rotate: (0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>CSS3 animation</h1>   
+    </div>
+
+</body>
+</html>

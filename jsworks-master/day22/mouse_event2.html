@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+    <link rel="stylesheet" href="./css/mouse_event2.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+        // hover 구현
+        //   $("button").hover(function() {
+        //       $(".pic img").toggleClass("on");
+        //   }, function() {
+        //       $(".pic img").toggleClass("on")
+        //   });
+
+
+        //mouseenter() mouseleave()로 hover구현
+        //체인 방식 - 식이 두개일때 .으로 이어줄수있음
+          $("button").mouseenter(function(){
+              $(".pic img").addClass("on");
+          }).mouseleave(function(){
+              $(".pic img").removeClass("on");
+          });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="pic"><img src="./images/4.jpg" alt="jQuery"></div>
+    <button>hover 이벤트</button>
+</body>
+</html>

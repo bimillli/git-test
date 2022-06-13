@@ -1,0 +1,19 @@
+.hdd{
+    width: 0; height: 0;
+    text-indent: -999; overflow: hidden;
+    position: absolute; left: -999px;
+}
+.insure{position: relative; max-width: 700px;} /*그냥 위스면 잘리므로 맥스위스쓰면안짤림*/
+.insure img{width: 100%;}
+.insure a{
+    position: absolute;
+    display: block;
+    /* background: rgba(0, 255, 0, 0.5); 위치를 잡기 위해 배경+ 투명도를 임시로줌 */
+    background: rgba(0, 255, 0, 0); /*투명도 0으로 보이지않게 만듬*/
+}
+.insure a.car{
+    width: 25%; height: 30%; left: 8%; top: 64%;
+}
+.insure a.house{
+    width: 30%; height: 35%; left: 60%; top: 60%;
+}

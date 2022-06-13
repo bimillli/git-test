@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+    <style>
+        ul{list-style: none;}
+        ul li{margin: 20px 0;}
+        h2{padding-left: 20px;}
+        /* label의 크기를 주어야 배치가 가능함 ex)float */
+        label{width: 80px; float: left;}
+        /* input[type="text"], input[type="password"]{width: 150px; height: 25px;} */
+        input{width: 150px; height: 25px;}
+        /* height or padding */
+        /* [type=""]은 속성 선택자 */
+        input[type="submit"]{width: 80px; height: 30px;}
+    </style>
+</head>
+<body>
+    <h2>로그인</h2>
+    <!-- 도메인 주석 표시줄에서 볼 수 있으면 get -->
+    <!-- 검색에서나 get을 사용함 -->
+    <form action="loginProcess.jsp" method="post"> <!-- action은 서버에 전송할 경우에만 입력 / method는 필수 -->
+        <ul>
+            <li>
+                <label>아이디</label>
+                <!-- required는 입력안하면 안넘어감 -->
+                <input type="text" name="userid" required>
+            </li>
+            <li>
+                <label>비밀번호</label>
+                <input type="password" name="pwd" required>
+            </li>
+            <li>
+                <input type="submit" value="로그인">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

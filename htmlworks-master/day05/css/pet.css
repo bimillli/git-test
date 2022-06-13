@@ -1,0 +1,18 @@
+/* 구글 웹 폰트는 맨 위에 위치해야 함 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 0 auto;}
+/* width를 안쓰면 1000px 그대로 사용 */
+header{height: 80px; background: #006699;}
+header #logo{width: 200px; float: left;}
+header h1{color: rgb(155, 240, 35); padding: 15px 20px; font-family: 'Nanum Pen Script', cursive; font-size: 40px;}
+header nav{width: 700px; float: right;}
+nav ul{list-style: none; text-align: right; margin-right: 100px;}
+/* display를 inline으로 할 경우 line-height를 header와 같게 주면 된다. */
+/* display를 block으로 할 경우 line-height는 필요 없다. */
+/* 좌우 margin 10px */
+nav ul li{display: inline; line-height: 80px; margin: 10px;}
+nav ul li a{color: #fff; text-decoration: none;}
+nav ul li a:hover{color: rgb(155, 240, 35);}
+
+section h1{padding: 20px;}

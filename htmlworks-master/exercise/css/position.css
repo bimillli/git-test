@@ -1,0 +1,12 @@
+*{margin:0; padding:0;}
+#contents{
+    background:url(../images/bg.jpg) no-repeat;
+    width:640px; height:420px;
+    position: relative;
+}
+#contents h1{
+    color:#fff;
+    position:absolute;
+    bottom:85px; right:70px;
+    font-size:120px;
+}
